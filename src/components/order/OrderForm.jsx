@@ -1,7 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import AddressModal from '../modals/AddressModal';
+import CONSTANTS from "../../routes/common.json"
 
 const OrderForm = () => {
     return (
+<React.Fragment>
+    <AddressModal/>
     <div className="col-lg-8 col-md-7 order-section">
         <div className="container mt-3 ms-lg-5">
             <div className="row">
@@ -29,7 +34,7 @@ const OrderForm = () => {
                                 <label for="" className="small-text">Mobile Number</label>
                                 <div className="input-group w-75">
                                     <input type="text" className="form-control me-2" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"/>
-                                    <button role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" className="btn buy border-radius" type="button" id="button-addon1">Login</button>
+                                    <button data-bs-toggle="modal" data-bs-target="#exampleModal" className="btn buy border-radius" type="button" id="button-addon1">Login</button>
                                 </div>
                             </div>
                         </form>
@@ -46,7 +51,7 @@ const OrderForm = () => {
                                     </div>
                                 </div>
                                 <div className="col-md-6">
-                                    <div className="card h-100 cursor">
+                                    <div data-bs-toggle="modal" data-bs-target="#addressModal" className="card h-100 cursor">
                                         <div className="card-body flex">
                                             <p className="small-text bold blue m-auto">&#43;  Add New Address</p>
                                         </div>
@@ -61,13 +66,14 @@ const OrderForm = () => {
                                 <input type="radio"/>
                                 <label for="" className="small-text">Cash on delivery</label>
                             </div>
-                            <button className="btn buy mt-5 ps-5 pe-5">Place order</button>
+                            <Link to={CONSTANTS.ROUTES.ORDER_SUCCESS} className="btn buy mt-5 ps-5 pe-5">Place order</Link>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</React.Fragment>
     );
 }
 

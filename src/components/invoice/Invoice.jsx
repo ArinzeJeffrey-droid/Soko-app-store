@@ -1,10 +1,11 @@
 import React from 'react'
 import Img from "../../assets/img/show.jpg"
 
-const Invoice = () => {
+
+const Invoice = (props) => {
     return (
     <div className="container mt-3">
-        <h5 className="bold"><span className="bold me-3">&#60;</span> Order #1233341</h5>
+        <h5 onClick={props.history.goBack} className="bold cursor"><span className="bold me-3">&#60;</span> Order #1233341</h5>
         <div className="invoice-container p-3 mb-5 m-auto outline">
             <div className="invoice-panel mt-3">
                 <i className="fas fa-bullseye bullseye me-4"></i>
@@ -46,7 +47,7 @@ const Invoice = () => {
                     </div>
                     <div className="product-info ms-3 col-md-10">
                         <h6 className="category mt-2">Kid's 2pk Cloth Face Masks</h6>
-                        <p style="margin-bottom: 0;" className="text-muted small-text">Size: <span className="bold me-3">Medium</span>  Color: <span className="badge badge-round bg-dark black">1</span></p>
+                        <p style={{marginBottom:"0"}} className="text-muted small-text">Size: <span className="bold me-3">Medium</span>  Color: <span className="badge badge-round bg-dark black">1</span></p>
                         <p className="float-start small-text mt-2 gray-bg ps-2 pe-2 bold">X2</p>
                         <p className="float-end small-text mt-2">UGX 8,700</p>
                     </div>
@@ -57,7 +58,7 @@ const Invoice = () => {
                     </div>
                     <div className="product-info ms-3 col-md-10">
                         <h6 className="category mt-2">Kid's 2pk Cloth Face Masks</h6>
-                        <p style="margin-bottom: 0;" className="text-muted small-text">Size: <span className="bold me-3">Medium</span>  Color: <span className="badge badge-round bg-dark black">1</span></p>
+                        <p style={{marginBottom:"0"}} className="text-muted small-text">Size: <span className="bold me-3">Medium</span>  Color: <span className="badge badge-round bg-dark black">1</span></p>
                         <p className="float-start small-text mt-2 gray-bg ps-2 pe-2 bold">X1</p>
                         <p className="float-end small-text mt-2">UGX 8,700</p>
                     </div>

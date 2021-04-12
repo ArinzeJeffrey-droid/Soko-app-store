@@ -3,7 +3,7 @@ import React from 'react'
 
 const Account = () => {
     return (
-    <div className="container mt-3">
+    <div className="container mt-3 mb-3 vh">
         <div className="flex">
             <h5 className="bold">Showing all orders</h5>
             <button className="btn filter-btn ps-4 pe-4"><i className="fas fa-filter"></i> Filter</button>

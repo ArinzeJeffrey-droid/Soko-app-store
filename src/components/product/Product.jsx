@@ -5,10 +5,10 @@ import Img from "../../assets/img/coming-2-america-poster-eddie-murphy-sequel.jp
 const Product = () => {
     const [qty, setQty] = useState(1)
     const increaseQty = () => {
-        setQty(qty++)
+        setQty(qty+1)
     }
     const decreaseQty = () => {
-        setQty(qty--)
+        setQty(qty-1)
     }
     return (
         <div className="container product-description">
@@ -17,7 +17,7 @@ const Product = () => {
                     <div className="img-desc">
                         <img src={Img} alt=""/>
                     </div>
-                    <div style="text-align:center" className="mt-3">
+                    <div style={{textAlign:"center"}} className="mt-3">
                         <span className="dot active-dot"></span>
                         <span className="dot"></span>
                         <span className="dot"></span>
@@ -34,9 +34,9 @@ const Product = () => {
                     <h5 className="bold">UGX 118,400 <span className="ms-5 badge bg-danger">-20%</span></h5>
                     <p className="mt-0 text-muted small-text text-decoration-line-through">UGX 148,000</p>
                     <div className="addBtn-container">
-                        <div onClick={increaseQty} className="ps-2 pe-2 act">&#8722;</div>
+                        <div onClick={decreaseQty} className="ps-2 pe-2 act">&#8722;</div>
                         <div className="ps-1 pe-1 num">{qty}</div>
-                        <div onClick={decreaseQty} className="ps-2 pe-2 act">&#43;</div>
+                        <div onClick={increaseQty} className="ps-2 pe-2 act">&#43;</div>
                     </div>
                     <div className="cartBtn-container mt-5 clear-padding row">
                         <button className="btn add ms-2 mb-3 me-5 col-lg-3 col-md-4">Add to Bag</button>

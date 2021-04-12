@@ -5,6 +5,8 @@
         "BAG": "/bag",
         "INVOICE": "/invoice",
         "ACCOUNT": "/account",
-        "ACCOUNT_ADDRESS": "/account/address"
+        "ACCOUNT_ADDRESS": "/account/address",
+        "ORDER": "/order",
+        "ORDER_SUCCESS": "/order/success"
     }
 }

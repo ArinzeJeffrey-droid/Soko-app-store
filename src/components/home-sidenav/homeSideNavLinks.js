@@ -1,4 +1,4 @@
-export default [
+export const homeSideNavLinks = [
     {
         name: "Electronics (12)",
         path: "#"
@@ -24,3 +24,4 @@ export default [
         path: "#"
     }
 ]
+

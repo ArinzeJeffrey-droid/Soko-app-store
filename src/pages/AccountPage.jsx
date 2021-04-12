@@ -8,9 +8,9 @@ import CONSTANTS from '../routes/common.json'
 
 const AccountPage = () => {
     return (  
-    <React.Fragment>
+    <div className="container mt-5">
         <AddressModal/>
-        <div className="account-container row m-auto">
+        <div className="account-container row m-auto mb-3">
             <div className="col-md-3 acc-first clear-padding">
                 <ul className="acc-nav mt-3">
                     <li className="p-2">
@@ -25,14 +25,14 @@ const AccountPage = () => {
                     </li>
                 </ul>
             </div>
-            <div class="col-md-9 acc-second">
+            <div className="col-md-9 acc-second">
                 <Switch>
                     <Route exact path={CONSTANTS.ROUTES.ACCOUNT} component={Account}/>
                     <Route path={CONSTANTS.ROUTES.ACCOUNT_ADDRESS} component={Address}/>
                 </Switch>
             </div>
         </div>
-    </React.Fragment>
+    </div>
     );
 }
 

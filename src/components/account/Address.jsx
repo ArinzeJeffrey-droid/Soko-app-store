@@ -2,7 +2,7 @@ import React from 'react'
 
 const Address = () => {
     return (
-    <div className="container mt-3">
+    <div className="container mt-3 mb-3 vh">
         <div className="row mt-4">
             <div className="col-md-6">
                 <div className="card h-100 cursor">
@@ -18,9 +18,9 @@ const Address = () => {
                 </div>
             </div>
             <div className="col-md-6">
-                <div className="card h-100 cursor">
+                <div data-bs-toggle="modal" data-bs-target="#addressModal" className="card h-100 cc cursor">
                     <div className="card-body flex">
-                        <p data-bs-toggle="modal" data-bs-target="#exampleModal" className="small-text bold blue m-auto">&#43;  Add New Address</p>
+                        <p className="small-text bold blue m-auto">&#43;  Add New Address</p>
                     </div>
                 </div>
             </div>
