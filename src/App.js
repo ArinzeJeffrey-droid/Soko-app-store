@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import Product from "./components/product/Product";
 import BagPage from "./pages/BagPage";
 import Invoice from "./components/invoice/Invoice";
+import AccountPage from "./pages/AccountPage";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path={CONSTANTS.ROUTES.VIEW_SINGLE_PRODUCT} component={Product}/>
             <Route path={CONSTANTS.ROUTES.BAG} component={BagPage}/>
             <Route path={CONSTANTS.ROUTES.INVOICE} component={Invoice}/>
+            <Route path={CONSTANTS.ROUTES.ACCOUNT} component={AccountPage}/>
           </Switch>
         </Router>
         <Footer/>

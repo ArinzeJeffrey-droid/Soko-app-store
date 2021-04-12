@@ -3,6 +3,8 @@
         "HOME": "/",
         "VIEW_SINGLE_PRODUCT": "/product",
         "BAG": "/bag",
-        "INVOICE": "/invoice"
+        "INVOICE": "/invoice",
+        "ACCOUNT": "/account",
+        "ACCOUNT_ADDRESS": "/account/address"
     }
 }
